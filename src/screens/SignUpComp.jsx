@@ -5,13 +5,11 @@ import {
   FormLabel,
   Input,
   InputGroup,
-  HStack,
   InputRightElement,
   Stack,
   Button,
   Heading,
   Text,
-  useColorModeValue,
   Link,
   Alert,
   AlertIcon,
@@ -21,7 +19,6 @@ import Auth from "../components/auth";
 import { useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import LoginComp from "./LoginComp";
-import HomepageComp from "./HomepageComp";
 
 export default function SignUpComp() {
   const [showPassword, setShowPassword] = useState(false);
@@ -29,7 +26,6 @@ export default function SignUpComp() {
   const [password, setPassword] = useState("");
   const [login, setLogin] = useState(true);
   const [flag, setFlag] = useState(false);
-  const [user, Setuser] = useState(null);
 
   const handleSignup = (e) => {
     e.preventDefault();

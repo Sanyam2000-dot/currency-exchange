@@ -10,11 +10,10 @@ import {
   Button,
   Heading,
   Text,
-  useColorModeValue,
   Alert,
   AlertIcon,
 } from "@chakra-ui/react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Auth from "../components/auth";
 import HomepageComp from "./HomepageComp";
 
@@ -46,7 +45,6 @@ export default function LoginComp() {
           minH={"100vh"}
           align={"center"}
           justify={"center"}
-          // bg={useColorModeValue("gray.50", "gray.800")}
         >
           <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
             <Stack align={"center"}>
@@ -58,7 +56,6 @@ export default function LoginComp() {
             </Stack>
             <Box
               rounded={"lg"}
-              // bg={useColorModeValue("white", "gray.700")}
               boxShadow={"lg"}
               p={8}
             >
