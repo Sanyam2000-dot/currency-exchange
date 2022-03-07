@@ -9,7 +9,7 @@ function Auth() {
   const uiConfig = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(authentication, provider).then(() => {
-      navigate("/home");
+      navigate("/home/");
     });
   };
   return (

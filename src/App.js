@@ -11,8 +11,8 @@ function App() {
     <ChakraProvider>
       <Router>
         <Routes>
-          <Route exact path="/" element={<LandingpageComp />} />
-          <Route exact path="/home" element={<HomepageComp />} />
+          <Route exact path="/" element={<LandingpageComp />} />{" "}
+          <Route exact path="/home/" element={<HomepageComp />} />{" "}
           <Route exact path="/login" element={<LoginComp />} />{" "}
           <Route exact path="/signup" element={<SignUpComp />} />{" "}
         </Routes>{" "}
